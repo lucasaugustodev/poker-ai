@@ -18,7 +18,7 @@ from trl import SFTTrainer
 # ── Paths ──────────────────────────────────────────────────────
 os.environ["HF_HOME"] = "D:/poker-ai/hf_cache"
 OUTPUT_DIR = "D:/poker-ai/poker-llm-lora"
-MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
+MODEL_NAME = "Qwen/Qwen2.5-7B-Instruct"
 
 # ── Load dataset ───────────────────────────────────────────────
 print("Loading PokerBench dataset...")
