@@ -26,12 +26,12 @@ dataset = load_dataset("RZ412/PokerBench", cache_dir="D:/poker-ai/hf_cache")
 
 # Format into chat-style prompt
 def format_prompt(example):
+    # Qwen2.5 chat template
     text = (
-        "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n"
-        f"{example['instruction'].strip()}\n"
-        "<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
-        f"{example['output'].strip()}"
-        "<|eot_id|>"
+        "<|im_start|>user\n"
+        f"{example['instruction'].strip()}<|im_end|>\n"
+        "<|im_start|>assistant\n"
+        f"{example['output'].strip()}<|im_end|>"
     )
     return {"text": text}
 
