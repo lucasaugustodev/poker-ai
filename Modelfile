@@ -1,0 +1,14 @@
+FROM ./poker-gto.gguf
+
+TEMPLATE """<|im_start|>system
+You are a GTO poker advisor. Give the optimal action (fold, check, call, bet, or raise with sizing) for the given poker situation.<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+{{ .Response }}<|im_end|>"""
+
+PARAMETER temperature 0.1
+PARAMETER top_p 0.9
+PARAMETER num_predict 256
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|im_start|>"

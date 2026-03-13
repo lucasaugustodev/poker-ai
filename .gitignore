@@ -58,3 +58,13 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+
+# Large model files (GGUF, safetensors)
+*.gguf
+*.safetensors
+
+# Ollama
+OllamaSetup.exe
+
+# Large binary files
+*.exe
