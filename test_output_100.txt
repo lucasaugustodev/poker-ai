@@ -1,0 +1,1075 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+W0313 08:14:24.420000 1132 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading Qwen/Qwen2.5-3B-Instruct in 4-bit...
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<01:42,  4.24it/s]D:\poker-ai\venv\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|          | 3/434 [00:00<01:02,  6.95it/s]Loading weights:   1%|          | 4/434 [00:00<01:01,  6.95it/s]Loading weights:   1%|1         | 5/434 [00:00<01:01,  6.94it/s]Loading weights:   2%|1         | 8/434 [00:00<00:36, 11.58it/s]Loading weights:   2%|2         | 10/434 [00:01<00:34, 12.21it/s]Loading weights:   3%|2         | 12/434 [00:01<00:32, 12.81it/s]Loading weights:   3%|3         | 14/434 [00:01<00:31, 13.46it/s]Loading weights:   4%|3         | 16/434 [00:01<00:39, 10.60it/s]Loading weights:   4%|4         | 18/434 [00:01<00:38, 10.88it/s]Loading weights:   5%|4         | 21/434 [00:01<00:34, 11.84it/s]Loading weights:   5%|5         | 23/434 [00:02<00:31, 13.03it/s]Loading weights:   6%|5         | 25/434 [00:02<00:31, 12.80it/s]Loading weights:   6%|6         | 27/434 [00:02<00:33, 12.20it/s]Loading weights:   7%|6         | 29/434 [00:02<00:46,  8.66it/s]Loading weights:  54%|#####4    | 236/434 [00:02<00:00, 323.45it/s]Loading weights: 100%|##########| 434/434 [00:03<00:00, 143.58it/s]
+D:\poker-ai\venv\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading LoRA adapter from D:/poker-ai/poker-llm-lora/checkpoint-1000...
+
+============================================================
+TESTING WITH POKERBENCH TEST SET
+============================================================
+
+------------------------------------------------------------
+Q1: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q2: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q3: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q4: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 10
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q5: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q6: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 11
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q7: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q8: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q9: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q10: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 92
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q11: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q12: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q13: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q14: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q15: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q16: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q17: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q18: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q19: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 12
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q20: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 81
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q21: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 64
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q22: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q23: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 85
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q24: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q25: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q26: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q27: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q28: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 3
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q29: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q30: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q31: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q32: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q33: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 16
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q34: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 73
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q35: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 88
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q36: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q37: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q38: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q39: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q40: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q41: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q42: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q43: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q44: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 29
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q45: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 7
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q46: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q47: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 34
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q48: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q49: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 25
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q50: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q51: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q52: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q53: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 70
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q54: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q55: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q56: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q57: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 18
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q58: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 3
+Model:    bet 3
+[OK] MATCH
+
+------------------------------------------------------------
+Q59: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q60: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q61: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q62: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q63: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 88
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q64: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q65: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q66: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q67: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q68: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q69: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 88
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q70: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q71: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q72: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q73: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 86
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q74: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q75: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q76: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q77: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q78: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q79: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 31
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q80: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q81: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 16
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q82: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q83: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q84: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 13
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q85: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q86: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q87: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    bet 18
+[X] MISMATCH
+
+------------------------------------------------------------
+Q88: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 10
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q89: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: fold
+Model:    fold
+[OK] MATCH
+
+------------------------------------------------------------
+Q90: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q91: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q92: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q93: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q94: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 10
+Model:    check
+[X] MISMATCH
+
+------------------------------------------------------------
+Q95: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    call
+[OK] MATCH
+
+------------------------------------------------------------
+Q96: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 25
+Model:    call
+[X] MISMATCH
+
+------------------------------------------------------------
+Q97: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: raise 88
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q98: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: call
+Model:    fold
+[X] MISMATCH
+
+------------------------------------------------------------
+Q99: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: check
+Model:    check
+[OK] MATCH
+
+------------------------------------------------------------
+Q100: You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips ...
+Expected: bet 17
+Model:    check
+[X] MISMATCH
+
+============================================================
+Score: 52/100 (52%)
+============================================================
+
+
+============================================================
+CUSTOM POKER QUESTIONS
+============================================================
+
+------------------------------------------------------------
+Q: You are playing Texas Hold'em. You have Ah Kh. The flop is Qh Jh 2c. There are 2 players. The pot is $100. Your opponent bets $50. What should you do?
+A: Given the situation, let's analyze it step by step:
+
+1. **Your Hand and Opponent's Bet:**
+   - You have Ace of Heart (Ah) and King of Heart (Kh).
+   - Your opponent has bet $50.
+
+2. **Flop:**
+   - The flop is Queen of Heart (Qh), Jack of Heart (Jh), and Two of Club (2c).
+   - This means that your hand is now Ten of Heart (Th), Nine of Heart (Nh), Queen of Heart (Qh), Jack of Heart (Jh), and Two of Club (2c).
+
+3. **Opponent's Bet:**
+   - Your opponent has bet $50, which is a significant amount in this game. This suggests that your opponent has a strong hand or a strong position.
+
+4. **Pot Size:**
+   - The pot size is $100, and your opponent has just bet $50. Therefore, the current pot size is $150.
+
+Now, let's consider your options:
+
+- **Call:** If you call, you will be putting $100 into the pot, making the total pot $250. However, since your opponent has already bet $
+
+------------------------------------------------------------
+Q: You have pocket aces (As Ad) preflop in a 6-max game. You are in the cutoff position. What is the correct action?
+A: In a 6-max game, when you have pocket aces (Ace of Diamond and Ace of Club) in the cutoff position, your action will depend on the actions of the players before you, particularly the player in the big blind position. However, since you are in the cutoff position, let's consider the most common scenarios:
+
+1. **Big Blind Raises**: If the big blind raises, you should call or raise to maintain your position. The big blind is usually the first to act after the button, so if they raise, it often means they have a strong hand.
+
+2. **Big Blind Calls**: If the big blind calls, you should raise to show strength and try to get them all in. This is because raising with pocket aces is very strong, and the big blind might be folding if you raise.
+
+3. **No Action from Big Blind**: If the big blind folds, you can raise to show strength. This is especially true if there has been a raise before you.
+
+Here is a step-by-step breakdown of the actions:
+
+1. Assume the big blind raises.
+   - Raise 2.5 times the big blind size.
+   - Assume the big blind calls.
+     - Raise 7.5 times the big blind size.
+
+------------------------------------------------------------
+Q: You have 7s 2d offsuit in the big blind. A tight player raises 3x from under the gun. What should you do?
+A: Given your position and the actions described, let's analyze the situation step by step:
+
+1. **Your Position**: Big Blind
+2. **Opponent's Action**: Raise 3x (assuming that "3x" means three times the small blind, which is typically 2 chips).
+
+### Analysis:
+- **Big Blind Position**: When you are in the Big Blind position, it is generally advisable to call or raise if you believe there is a good chance that your hand can win the pot.
+- **Raise Size**: The raise size of 3x is quite strong, especially when playing with chips rather than virtual chips. This suggests that the opponent has a strong hand.
+
+### Decision:
+Given that the opponent raised 3x, it is likely that they have a strong hand such as King of Diamond (King-2), Queen of Diamond (Queen-2), Jack of Diamond (Jack-2), Ten of Diamond (Ten-2), Nine of Diamond (Nine-2), Eight of Diamond (Eight-2), Seven of Diamond (Seven-2), Six of Diamond (Six-2), Five of Diamond (Five-2), Four of Diamond (Four-2), Three of Diamond (Three-2), Two of Diamond (Two-2),
