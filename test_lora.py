@@ -67,7 +67,7 @@ test_data = dataset["test"]
 
 # Test first 5 examples from test set
 correct = 0
-total = min(10, len(test_data))
+total = min(100, len(test_data))
 
 for i in range(total):
     example = test_data[i]
