@@ -1,12 +1,15 @@
 ---
 base_model: Qwen/Qwen2.5-3B-Instruct
-library_name: transformers
+library_name: peft
 model_name: poker-llm-lora
 tags:
-- generated_from_trainer
-- trl
+- base_model:adapter:Qwen/Qwen2.5-3B-Instruct
+- lora
 - sft
+- transformers
+- trl
 licence: license
+pipeline_tag: text-generation
 ---
 
 # Model Card for poker-llm-lora
@@ -35,6 +38,7 @@ This model was trained with SFT.
 
 ### Framework versions
 
+- PEFT 0.18.1
 - TRL: 0.29.0
 - Transformers: 5.3.0
 - Pytorch: 2.12.0.dev20260312+cu128
