@@ -105,7 +105,7 @@ custom_questions = [
 ]
 
 for i, q in enumerate(custom_questions):
-    print(f"\n{'─'*60}")
+    print(f"\n{'-'*60}")
     print(f"Q: {q}")
     answer = ask_poker(q)
     print(f"A: {answer}")
