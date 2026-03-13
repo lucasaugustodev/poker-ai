@@ -74,24 +74,23 @@ print(f"\nTrainable params: {trainable:,} / {total:,} ({100*trainable/total:.2f}
 # ── SFT Config (all-in-one for TRL 0.29+) ─────────────────────
 sft_config = SFTConfig(
     output_dir=OUTPUT_DIR,
-    num_train_epochs=1,
+    max_steps=5000,                    # ~80k examples, enough for convergence
     per_device_train_batch_size=2,
-    gradient_accumulation_steps=8,
+    gradient_accumulation_steps=2,     # effective batch = 4, faster steps
     learning_rate=2e-4,
     weight_decay=0.01,
-    warmup_steps=200,
+    warmup_steps=100,
     lr_scheduler_type="cosine",
-    logging_steps=50,
-    save_steps=2000,
-    save_total_limit=3,
+    logging_steps=25,
+    save_steps=1000,
+    save_total_limit=2,
     bf16=True,
     optim="paged_adamw_8bit",
     gradient_checkpointing=True,
     max_grad_norm=0.3,
     report_to="none",
     dataloader_num_workers=0,
-    eval_strategy="steps",
-    eval_steps=2000,
+    eval_strategy="no",                # skip eval to save time
     seed=42,
     max_length=512,
     dataset_text_field="text",
