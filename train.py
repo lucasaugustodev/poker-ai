@@ -111,7 +111,7 @@ print("\nStarting training...")
 print(f"Effective batch: {sft_config.per_device_train_batch_size} x {sft_config.gradient_accumulation_steps} = {sft_config.per_device_train_batch_size * sft_config.gradient_accumulation_steps}")
 print(f"Output: {OUTPUT_DIR}")
 
-trainer.train()
+trainer.train(resume_from_checkpoint="D:/poker-ai/poker-llm-lora/checkpoint-1000")
 
 # ── Save ───────────────────────────────────────────────────────
 print("\nSaving LoRA adapter...")
