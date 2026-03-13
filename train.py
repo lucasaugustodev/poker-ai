@@ -99,7 +99,6 @@ training_args = TrainingArguments(
     optim="paged_adamw_8bit",          # 8-bit optimizer saves VRAM
     gradient_checkpointing=True,       # trades compute for VRAM
     max_grad_norm=0.3,
-    group_by_length=True,              # batch similar-length sequences
     report_to="none",                  # no wandb/tensorboard
     dataloader_num_workers=2,
     eval_strategy="steps",
