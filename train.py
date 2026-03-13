@@ -89,13 +89,13 @@ sft_config = SFTConfig(
     gradient_checkpointing=True,
     max_grad_norm=0.3,
     report_to="none",
-    dataloader_num_workers=2,
+    dataloader_num_workers=0,
     eval_strategy="steps",
     eval_steps=2000,
     seed=42,
-    max_length=1024,
+    max_length=512,
     dataset_text_field="text",
-    packing=True,
+    packing=False,
 )
 
 # ── Trainer ────────────────────────────────────────────────────
