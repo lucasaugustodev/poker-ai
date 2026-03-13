@@ -2,7 +2,8 @@
 Test the PokerBench LoRA checkpoint (1000 steps)
 Loads Qwen2.5-3B-Instruct + LoRA adapter and runs poker scenarios
 """
-import os
+import sys, os
+sys.stdout.reconfigure(encoding='utf-8')
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import PeftModel
