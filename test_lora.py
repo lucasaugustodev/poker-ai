@@ -12,7 +12,7 @@ from datasets import load_dataset
 os.environ["HF_HOME"] = "D:/poker-ai/hf_cache"
 
 MODEL_NAME = "Qwen/Qwen2.5-3B-Instruct"
-ADAPTER_PATH = "D:/poker-ai/poker-llm-lora/checkpoint-3000"
+ADAPTER_PATH = "D:/poker-ai/poker-llm-lora/checkpoint-4000"
 CACHE_DIR = "D:/poker-ai/hf_cache"
 
 # ── Load model + adapter ──────────────────────────────────────
