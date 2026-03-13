@@ -75,8 +75,8 @@ print(f"\nTrainable params: {trainable:,} / {total:,} ({100*trainable/total:.2f}
 sft_config = SFTConfig(
     output_dir=OUTPUT_DIR,
     max_steps=5000,                    # ~80k examples, enough for convergence
-    per_device_train_batch_size=2,
-    gradient_accumulation_steps=2,     # effective batch = 4, faster steps
+    per_device_train_batch_size=4,     # 3B model uses less VRAM, bigger batch
+    gradient_accumulation_steps=2,     # effective batch = 8
     learning_rate=2e-4,
     weight_decay=0.01,
     warmup_steps=100,
