@@ -74,7 +74,7 @@ for i in range(total):
     question = example["instruction"].strip()
     expected = example["output"].strip()
 
-    print(f"\n{'─'*60}")
+    print(f"\n{'-'*60}")
     print(f"Q{i+1}: {question[:200]}...")
 
     answer = ask_poker(question, max_tokens=128)
@@ -85,9 +85,9 @@ for i in range(total):
     # Simple match check
     if expected.lower() in answer.lower() or answer.lower().startswith(expected.lower()[:20]):
         correct += 1
-        print("✓ MATCH")
+        print("[OK] MATCH")
     else:
-        print("✗ MISMATCH")
+        print("[X] MISMATCH")
 
 print(f"\n{'='*60}")
 print(f"Score: {correct}/{total} ({100*correct/total:.0f}%)")
